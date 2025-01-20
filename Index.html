@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Client-Side Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #008cba;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .button:hover {
+            background-color: #005f75;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <h2>About Our Website</h2>
+        <p>This is a simple client-side website built with HTML and CSS. You can navigate through the sections using the links above.</p>
+        <button id="learnMoreButton" class="button">Learn More</button>
+        <p id="message" style="display: none; margin-top: 1rem;">Thank you for your interest! Stay tuned for more updates.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Client-Side Website. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('learnMoreButton').addEventListener('click', function() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
